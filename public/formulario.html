@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulario | Agregar Producto</title>
+        <link rel="shortcut icon" href="./producto.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./formulario.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="brand-title">Agregar Productos</div>
+            <div class="inputs">
+                <form action="/api/productos" method="post">
+                    <label for="title">Titulo</label>
+                    <input
+                        type="text"
+                        name="title"
+                        placeholder="Ingrese Titulo"
+                        required
+                    />
+
+                    <label for="price">Precio</label>
+                    <input
+                        type="number"
+                        name="price"
+                        placeholder="Ingrese el precio"
+                    />
+
+                    <label for="thumbnail">Thumbnail</label>
+                    <input
+                        type="text"
+                        name="thumbnail"
+                        placeholder="Ingrese el thumbnail"
+                    />
+
+                    <button type="submit">Agregar Producto</button>
+                </form>
+            </div>
+        </div>
+
+        <!--
+        <h1>Agregar Productos</h1>
+    <form action="/api/productos" method="post">
+        <label for="titulo">Título:</label> <br>
+        <input type="text" name="titulo" required> <br>
+
+        <label for="precio">Precio:</label> <br>
+        <input type="text" name="precio" required> <br>
+
+        <label for="thumbnail">Thumbnail:</label><br>
+        <input type="text" name="thumbnail" required> <br>
+        
+        <br> <button type="submit">Agregar producto</button>
+    </form>
+    --></body>
+</html>
